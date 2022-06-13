@@ -21,7 +21,7 @@ export default {
 
 <template>
   <HeaderVue/>
-
+  <RouterView/>
 </template>
 
 <style>

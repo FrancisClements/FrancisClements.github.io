@@ -3,21 +3,21 @@
     --blue-accent:#27aae1;
     --blue-primary:#2b3990;
     --yellow-secondary:#815a1c;
-    --yelow-primary:#cf942d;
+    --yellow-primary:#cf942d;
     --yellow-accent:#f2b654;
     --bg:#F6F6F6;
 
     --selected-link-color:var(--blue-accent);
-
 }
 
 *{
     font-family: Viga, Arial, Helvetica, sans-serif;
-    background-color: var(--bg);
+    color: var(--root-font-color);
 }
 
 body{
     margin:0;
+    background-color: var(--bg);
 }
 
 a{
@@ -66,3 +66,14 @@ img{
     height: auto;
     display: block;
   }
+
+/* Page Responsive part */
+@media (min-width: 851px), (orientation: landscape){
+
+}
+@media (orientation: portrait) and (min-width: 551px) and (max-width: 850px){
+
+}
+@media (max-width: 550px){
+
+}
