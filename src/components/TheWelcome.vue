@@ -6,69 +6,111 @@ export default {
       firstName2: 'Ivan',
       lastName: 'Clemente'
       }
-  },
-  mounted() {
-    // window.addEventListener("scroll", this.onScroll)
-  },
-  beforeDestroy() {
-    // window.removeEventListener("scroll", this.onScroll)
-  },
-  methods: {
-    onScroll(e) {
-      // console.log(window.scrollY);
-    }
   }
 }
 </script>
 
 <template>
+<kinesis-container>
   <div class="hero-intro">
-    <h3>Hi, I'm</h3>
-    <h1 class="full-name">
-      <ul class="first">
-        <li v-for="ch in firstName" class="name-letter">{{ch}}</li>
-        <li>&nbsp;</li>
-        <li v-for="ch in firstName2" class="name-letter">{{ch}}</li>
-      </ul>
-      <ul class="last">
-        <li v-for="ch in lastName">{{ch}}</li>
-      </ul>
-    </h1>
-    <h2 class="sub-text">
-      I am a 
-      <span>Game</span> and <span>Software Developer</span> based in the Philippines.
-      I'm specialized in building mobile and PC Game apps.
-    </h2>
+    <div class="introduction">
+      <h3 class="sub-text">Hi, I'm</h3>
+      <h1 class="full-name">
+        <ul class="first">
+          <li v-for="ch in firstName" class="name-letter">{{ch}}</li>
+          <li>&nbsp;</li>
+          <li v-for="ch in firstName2" class="name-letter">{{ch}}</li>
+        </ul>
+        <ul class="last">
+          <li v-for="ch in lastName">{{ch}}</li>
+        </ul>
+      </h1>
+      <h2 class="sub-text">
+        I am a 
+        <span>Game</span> and <span>Software Developer</span> based in the Philippines.
+        I can build games and applications, specializing on PC and Mobile platforms.
+      </h2>
+      <div class="contacts">
+        <RouterLink to="/works" class="primary">
+          View Works
+        </RouterLink>
+        <RouterLink to="/contact">
+          Get in touch
+        </RouterLink>
+      </div>
+    <!-- /INTRODUCTION -->
+    </div>
+    <div class="splash">
+      <div class="splash-outer-container">
+      <kinesis-element :strength="-10" class="splash-container">
+        <kinesis-element :strength="-25">
+          <div class="splash-logo"></div>
+        </kinesis-element>
+      </kinesis-element>
+      </div>
+    </div>
   </div>
+</kinesis-container>
 </template>
 
 <style scoped>
-
   .hero-intro{
     display: flex;
-    flex-direction: column;
-    padding-left: var(--hero-padding-left);
-    padding-right: var(--hero-padding-right);
-    /* margin: var(--hero-margin); */
-    min-height: calc(100vh - 15rem);
-    justify-content: center;
+    padding: 0 var(--hero-padding);
+    padding-bottom: var(--hero-padding-bottom);
+    min-height: calc(100vh - var(--hero-padding-bottom));
+    justify-content: space-between;
   }
 
-  h1, h3{
+  .introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 50%;
+  }
+
+  h1{
     margin: 0;
   }
 
+  h3{
+    margin-bottom: 5px;
+  }
+
+  .splash{
+    display: flex;
+    align-items: center;
+  }
+
+  .splash-outer-container{
+    position: relative;
+    width: 100%;
+  }
+
+  .splash-container{
+    background: url("@/assets/splash-border.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10em;
+    height: auto;
+    padding: 5em;
+  }
+
+  .splash-logo{
+    background: url("@/assets/logo_only_gradient.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 100%;
+    height: 10em;
+  }
+
   .full-name{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .full-name{
-    line-height: clamp(2.5vh, var(--first-size), 6vh);
-  }
-
-  .full-name{
+    align-items: flex-start;
+    line-height: clamp(35px, var(--first-size), 6vh);
     margin: 0;
   }
 
@@ -77,12 +119,12 @@ export default {
   }
 
   .first li{
-    font-size: clamp(82%, var(--first-size), 200%);
+    font-size: clamp(120%, var(--first-size), 200%);
     color: var(--yellow-secondary);
   }
   .last li{
     color: var(--blue-primary);
-    font-size: clamp(105%, var(--last-size), 255%);
+    font-size: clamp(155%, var(--last-size), 255%);
   }
 
   .first li, .last li{
@@ -90,7 +132,7 @@ export default {
   }
 
   .sub-text{
-    font-size: 1vw;
+    font-size: clamp(.6em, 1vw, 1.25em);
     font-weight: normal;
   }
 
@@ -98,28 +140,70 @@ export default {
     font-weight: bold;
   }
 
+  .contacts{
+    margin-top: 25px;
+  }
+
+  .contacts a{
+    padding: .5rem 1.5rem;
+    display: inline-flex;
+  }
+
+  .contacts .primary{
+    background-color: var(--blue-primary);
+    color: var(--bg);
+    border-radius: 10px;
+  }
+
   @media (hover: hover){
     .first li:hover, .last li:hover{
       transform: translateY(-25%);
+    }    
+    .primary:hover{
+        color: var(--bg);
+        background-color: #4b59b6;
     }
   }
 
   @media (min-width: 851px), (orientation: landscape){
     .hero-intro{
-      --hero-padding-left: 20vw;
-      --hero-padding-right: 40vw;
+      --hero-padding: 20vw;
       --hero-margin: 15vh 0;
+      --hero-padding-bottom: 15rem;
+    }
+
+    .introduction{
       --first-size: 4vw;
       --last-size: 5.1vw;
+    }
+
+    .sub-text{
+      width: 50%;
     }
   }
   @media (orientation: portrait), (max-width: 850px){
     .hero-intro{
-      --hero-padding-left: 0;
-      --hero-padding-right: 0;
+      --hero-padding: 0px;
       --hero-margin: 10vh 0;
+      --hero-padding-bottom: 15rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .introduction{
       --first-size: 4vw;
       --last-size: 5.1vw;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 50%;
+    }
+    .sub-text{
+      width: 100%;
+    }
+
+    .splash{
+      display: none;
     }
   }
 

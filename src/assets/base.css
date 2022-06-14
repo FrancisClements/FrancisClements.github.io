@@ -26,11 +26,6 @@ a{
     transition: 0.4s;
 }
 
-@media (hover: hover) {
-a:hover {
-    color: var(--selected-link-color);
-}
-}
 
 nav {
     font-size: 12px;
@@ -66,6 +61,14 @@ img{
     height: auto;
     display: block;
   }
+
+/* Hover part */
+@media (hover: hover) {
+    a:hover {
+        color: var(--selected-link-color);
+    }
+}
+
 
 /* Page Responsive part */
 @media (min-width: 851px), (orientation: landscape){
