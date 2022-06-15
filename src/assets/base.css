@@ -62,6 +62,21 @@ img{
     display: block;
   }
 
+.header{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 2em;
+}
+
+.glass{
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2.5px);
+    border: 1px solid #FAFAFA;
+}
+
+
+
 /* Hover part */
 @media (hover: hover) {
     a:hover {
@@ -69,8 +84,19 @@ img{
     }
 }
 
+/* Page Responsive Queries*/
+@media (min-width: 851px), (orientation: landscape){
+    :root{
+        --section-padding: 20vw;
+    }
+}
+@media (orientation: portrait) and (min-width: 551px) and (max-width: 850px){
+    :root{
+        --section-padding: 0px;
+    }
+}
 
-/* Page Responsive part */
+/* Template
 @media (min-width: 851px), (orientation: landscape){
 
 }
@@ -80,3 +106,4 @@ img{
 @media (max-width: 550px){
 
 }
+*/

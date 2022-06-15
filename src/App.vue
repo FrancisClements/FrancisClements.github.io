@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import BackgroundVue from './components/Background.vue';
 import HeaderVue from './components/Header.vue';
 import './assets/base.css';
 </script>
@@ -20,6 +20,7 @@ export default {
 </script>
 
 <template>
+  <BackgroundVue/>
   <HeaderVue/>
   <RouterView/>
 </template>

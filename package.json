@@ -1,5 +1,5 @@
 {
-  "name": "test-web",
+  "name": "francis-clements-portfolio",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -15,5 +15,9 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
     "vite": "^2.9.9"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   }
 }

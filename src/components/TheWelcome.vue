@@ -12,7 +12,7 @@ export default {
 
 <template>
 <kinesis-container>
-  <div class="hero-intro">
+  <section class="hero-intro">
     <div class="introduction">
       <h3 class="sub-text">Hi, I'm</h3>
       <h1 class="full-name">
@@ -38,25 +38,25 @@ export default {
           Get in touch
         </RouterLink>
       </div>
-    <!-- /INTRODUCTION -->
     </div>
+    <!-- /INTRODUCTION -->
     <div class="splash">
       <div class="splash-outer-container">
-      <kinesis-element :strength="-10" class="splash-container">
-        <kinesis-element :strength="-25">
+      <kinesis-element :strength="-25" class="splash-container">
+        <kinesis-element :strength="-30">
           <div class="splash-logo"></div>
         </kinesis-element>
       </kinesis-element>
       </div>
     </div>
-  </div>
+  </section>
 </kinesis-container>
 </template>
 
 <style scoped>
   .hero-intro{
     display: flex;
-    padding: 0 var(--hero-padding);
+    padding: 0 var(--section-padding);
     padding-bottom: var(--hero-padding-bottom);
     min-height: calc(100vh - var(--hero-padding-bottom));
     justify-content: space-between;
@@ -110,7 +110,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    line-height: clamp(35px, var(--first-size), 6vh);
+    line-height: clamp(1.1em, var(--first-size), 2em);
     margin: 0;
   }
 
@@ -167,7 +167,6 @@ export default {
 
   @media (min-width: 851px), (orientation: landscape){
     .hero-intro{
-      --hero-padding: 20vw;
       --hero-margin: 15vh 0;
       --hero-padding-bottom: 15rem;
     }
@@ -183,7 +182,6 @@ export default {
   }
   @media (orientation: portrait), (max-width: 850px){
     .hero-intro{
-      --hero-padding: 0px;
       --hero-margin: 10vh 0;
       --hero-padding-bottom: 15rem;
       justify-content: center;
