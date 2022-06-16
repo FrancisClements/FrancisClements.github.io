@@ -1,0 +1,26 @@
+{
+    "img_dir": "assets/projects/",
+    "select_works":[
+    {
+        "title": "Super Soda Bomber",
+        "desc": "Help Fizzy rescue her girlfriend from the invaders ... to stop them from reaching world domination!",
+        "src": "supersoda/main-menu.png",
+        "tags": ["c#", "unity2D", "mobile"],
+        "selected": true
+    },
+    {
+        "title": "Hops",
+        "desc": "Hops is a tale about frogs and their adventures in the quest of reclaiming their home from predators and other creatures.",
+        "src": "hops/thumbnail.png",
+        "tags": ["c#", "unity2D", "pc"],
+        "selected": true
+    },
+    {
+        "title": "Galaw",
+        "desc": "An interactive application built for children from Pangasinan to introduce English language in a fun way.",
+        "src": "galaw/menu-logo.png",
+        "tags": ["c#", "unity2D", "mobile"],
+        "selected": true
+    }
+    ]
+}

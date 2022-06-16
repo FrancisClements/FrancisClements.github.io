@@ -20,11 +20,7 @@ const router = createRouter({
       path: '/works',
       name: 'works',
       component: WorksView
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-    },
+    }
   ]
 })
 

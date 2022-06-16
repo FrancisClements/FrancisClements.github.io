@@ -31,10 +31,10 @@ export default {
         I can build games and applications, specializing on PC and Mobile platforms.
       </h2>
       <div class="contacts">
-        <RouterLink to="/works" class="primary">
+        <RouterLink to="/works" class="primary-button">
           View Works
         </RouterLink>
-        <RouterLink to="/contact">
+        <RouterLink to="/about">
           Get in touch
         </RouterLink>
       </div>
@@ -149,20 +149,10 @@ export default {
     display: inline-flex;
   }
 
-  .contacts .primary{
-    background-color: var(--blue-primary);
-    color: var(--bg);
-    border-radius: 10px;
-  }
-
   @media (hover: hover){
     .first li:hover, .last li:hover{
       transform: translateY(-25%);
-    }    
-    .primary:hover{
-        color: var(--bg);
-        background-color: #4b59b6;
-    }
+    }  
   }
 
   @media (min-width: 851px), (orientation: landscape){

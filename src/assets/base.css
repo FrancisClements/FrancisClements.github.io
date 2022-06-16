@@ -1,6 +1,7 @@
 :root{
     --root-font-color: #333;
     --blue-accent:#27aae1;
+    --blue-accent2: #bfecff;
     --blue-primary:#2b3990;
     --yellow-secondary:#815a1c;
     --yellow-primary:#cf942d;
@@ -64,7 +65,7 @@ img{
 
 .header{
     width: 100%;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     font-size: 2em;
 }
 
@@ -75,12 +76,23 @@ img{
     border: 1px solid #FAFAFA;
 }
 
+.primary-button{
+    background-color: var(--blue-primary);
+    color: var(--bg);
+    border-radius: 10px;
+}
+
 
 
 /* Hover part */
 @media (hover: hover) {
     a:hover {
         color: var(--selected-link-color);
+    }
+
+    .primary-button:hover{
+        color: var(--bg);
+        background-color: #4b59b6;
     }
 }
 

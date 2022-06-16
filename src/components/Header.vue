@@ -7,9 +7,8 @@ export default {
   data() {
     return {
       mainMenuList: [
-        'about',
         'works',
-        'contact'
+        'about'
       ]
       }
     }
