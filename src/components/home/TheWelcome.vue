@@ -88,7 +88,7 @@ export default {
   }
 
   .splash-container{
-    background: url("@/assets/splash-border.png");
+    background: url("/splash-border.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 10em;
@@ -97,7 +97,7 @@ export default {
   }
 
   .splash-logo{
-    background: url("@/assets/logo_only_gradient.png");
+    background: url("/logo_only_gradient.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -132,7 +132,7 @@ export default {
   }
 
   .sub-text{
-    font-size: clamp(.6em, 1vw, 1.25em);
+    font-size: clamp(.8em, 1vw, 1.25em);
     font-weight: normal;
   }
 
@@ -184,7 +184,7 @@ export default {
       align-items: center;
       justify-content: center;
       text-align: center;
-      max-width: 50%;
+      max-width: 80%;
     }
     .sub-text{
       width: 100%;

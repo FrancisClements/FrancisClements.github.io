@@ -30,18 +30,17 @@ export default {
 .bg-wrapper{
     z-index: -1;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
-    padding-bottom: 300vh;
 }
 .bg-design{
     position: fixed;
-    background: url('@/assets/bg_design.png');
+    background: url('img/bg_design.png');
     background-position: center top;
     background-repeat: repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
 }

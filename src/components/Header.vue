@@ -20,7 +20,7 @@ export default {
     <div class="header-nav">
       <div class="header-logo">
         <RouterLink to="/">
-          <img src="@/assets/logo_colored.png" alt="Francis Ivan Clemente">
+          <img src="/logo_colored.png" alt="Francis Ivan Clemente">
         </RouterLink>
       </div>
       <nav>
@@ -75,7 +75,7 @@ export default {
 
     @media (min-width: 851px), (orientation: landscape){
         .header-nav{
-            margin: 0 40px;
+            margin: 0 var(--section-padding);
         }
     }
 </style>

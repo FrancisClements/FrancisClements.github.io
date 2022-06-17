@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import BackgroundVue from './components/Background.vue';
 import HeaderVue from './components/Header.vue';
+import FooterVue from './components/Footer.vue';
 import './assets/base.css';
 </script>
 
@@ -23,6 +24,7 @@ export default {
   <BackgroundVue/>
   <HeaderVue/>
   <RouterView/>
+  <FooterVue/>
 </template>
 
 <style>

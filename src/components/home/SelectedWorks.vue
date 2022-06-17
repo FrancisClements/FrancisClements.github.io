@@ -1,5 +1,5 @@
 <script setup>
-import WorkCardVue from './WorkCard.vue';
+import WorkCardVue from './../WorkCard.vue';
 </script>
 
 <script>

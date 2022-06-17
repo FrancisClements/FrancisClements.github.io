@@ -15,11 +15,6 @@ export default {
       }  
     },
     methods: {
-        //unpacks the '@/' url
-        getImg(path) {
-            return new URL('./../' + path, import.meta.url).href
-        },
-
         //available tags: unity,unreal,pc,mobile,c#,py
         determineTag(tagName) {
             var tag
@@ -40,7 +35,7 @@ export default {
 <template>
 <article class="work-card glass">
     <div class="img-container">
-        <img :src="getImg(img_src)" :alt="title">
+        <img :src="img_src" :alt="title">
     </div>
     <figcaption class="details">
         <h1 class="header game-title">{{title}}</h1>

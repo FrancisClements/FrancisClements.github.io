@@ -10,14 +10,11 @@
     "pinia": "^2.0.14",
     "vue": "^3.2.36",
     "vue-kinesis": "^2.0.5",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "webpack": "^5.73.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
     "vite": "^2.9.9"
-  },
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
   }
 }
