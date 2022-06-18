@@ -36,7 +36,7 @@ export default {
 }
 .bg-design{
     position: fixed;
-    background: url('img/bg_design.png');
+    background: url('/bg_design.png');
     background-position: center top;
     background-repeat: repeat;
     width: 100%;
