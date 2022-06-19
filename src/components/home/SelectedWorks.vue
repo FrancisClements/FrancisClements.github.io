@@ -1,14 +1,19 @@
 <script setup>
 import WorkCardVue from './../WorkCard.vue';
+import ProjectsJSON from "@/assets/ProjectList.json";
 </script>
 
 <script>
-import projectList from "@/assets/projectList.json";
 export default {
     data() {
         return {
-            img_dir: projectList.img_dir,
-            selectWorks: projectList.select_works
+            img_dir: ProjectsJSON.img_dir,
+            works: ProjectsJSON.works
+        }
+    },
+    computed: {
+        selectWorks() {
+            return this.works.filter((w) => w.selected);
         }
     }
 }
@@ -17,7 +22,7 @@ export default {
 <template>
 <section class="select-works">
     <h1 class="header">Selected Works</h1>
-    <div class="selected-list">
+    <div class="flex-list">
         <WorkCardVue
             v-for="w in selectWorks"
             :title="w.title"
@@ -35,14 +40,6 @@ export default {
 <style scoped>
 .select-works{
     padding: 0 var(--section-padding);
-}
-
-.selected-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    margin: 2rem 0;
 }
 
 .more-button{

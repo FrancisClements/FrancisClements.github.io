@@ -9,6 +9,7 @@
     --bg:#F6F6F6;
 
     --selected-link-color:var(--blue-accent);
+    --section-y-padding: 5em;
 }
 
 *{
@@ -63,6 +64,18 @@ img{
     display: block;
   }
 
+#app {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.router{
+    flex:1;
+}
+
 .header{
     width: 100%;
     margin: 1rem 0;
@@ -82,7 +95,13 @@ img{
     border-radius: 10px;
 }
 
-
+.flex-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 2rem 0;
+}
 
 /* Hover part */
 @media (hover: hover) {
@@ -102,9 +121,9 @@ img{
         --section-padding: 20vw;
     }
 }
-@media (orientation: portrait) and (min-width: 551px) and (max-width: 850px){
+@media (max-width: 850px){
     :root{
-        --section-padding: 0px;
+        --section-padding: 15px;
     }
 }
 

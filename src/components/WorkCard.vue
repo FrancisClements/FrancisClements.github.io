@@ -1,17 +1,10 @@
 <script>
+import colorTagsJSON from "@/assets/ColorTags.json"
 export default {
     props: ['title', 'desc', 'img_src', 'tags'],
     data() {
         return {
-            colorTags: {
-                unity2D: { color: "var(--blue-accent)", name: "Unity 2D" },
-                unreal: { color: "#c2c7f3", name: "Unreal Engine 4" },
-                pc: { color: "var(--blue-accent2)", name: "PC" },
-                mobile: { color: "#92ddd3", name: "Mobile" },
-                cs: { color: "#c98cd8", name: "C#" },
-                py: { color: "var(--yellow-accent)", name: "Python" },
-                default: {color: "red", name: "Err"}
-            }
+            colorTags: colorTagsJSON
       }  
     },
     methods: {
@@ -37,7 +30,7 @@ export default {
     <div class="img-container">
         <img :src="img_src" :alt="title">
     </div>
-    <figcaption class="details">
+    <figcaption>
         <h1 class="header game-title">{{title}}</h1>
         <p>{{desc}}</p>
         <ul class="tag-container last-item">
@@ -55,6 +48,7 @@ export default {
 .work-card{
     display: flex;
     padding: 1em;
+    max-width: 100%;
     
 }
 .work-card img{
@@ -78,7 +72,6 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     margin:1em 0;
-    width: 100%;
 }
 
 .tag{
@@ -87,7 +80,7 @@ export default {
 }
 
 figcaption{
-    align-items: center;
+    align-items:flex-start;
     flex: 1 1 200px;
     padding: 0 1em;
     display: flex;

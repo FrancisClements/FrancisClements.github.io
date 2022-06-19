@@ -1,0 +1,9 @@
+{
+    "unity2D": { "color": "var(--blue-accent)", "name": "Unity 2D" },
+    "unreal": { "color": "#c2c7f3", "name": "Unreal Engine 4" },
+    "pc": { "color": "var(--blue-accent2)", "name": "PC" },
+    "mobile": { "color": "#92ddd3", "name": "Mobile" },
+    "cs": { "color": "#c98cd8", "name": "C#" },
+    "py": { "color": "var(--yellow-accent)", "name": "Python" },
+    "default": {"color": "red", "name": "Err"}
+}

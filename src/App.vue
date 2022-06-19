@@ -23,14 +23,8 @@ export default {
 <template>
   <BackgroundVue/>
   <HeaderVue/>
-  <RouterView/>
+  <div class="router">
+    <RouterView/>
+  </div>
   <FooterVue/>
 </template>
-
-<style>
-
-#app {
-  font-weight: normal;
-}
-
-</style>
