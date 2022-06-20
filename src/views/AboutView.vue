@@ -21,7 +21,7 @@ import { Python, Unity } from '@vicons/fa';
       <li>Appreciating animation</li>
     </ul>
     <section class="skillset-wrapper">
-      <h1 style="text-align:center">Technical Skillset</h1>
+      <h1 class="center">Technical Skillset</h1>
       <div class="skillset-grid">
         <div class="icon-wrapper">
           <div class="icon">
@@ -56,8 +56,13 @@ import { Python, Unity } from '@vicons/fa';
           </div>
         </div>
       </div>
-      
     </section>
+    <section class="contacts center">
+      <p>Interested to work with me?&nbsp;Feel free to contact me below!</p>
+      <h1 class="email">ftclemente@student.hau.edu.ph</h1>
+
+    </section>
+    
   </section>
 </template>
 
@@ -141,6 +146,18 @@ import { Python, Unity } from '@vicons/fa';
   justify-content: center;
   height: 100%;
 
+}
+
+.center{
+  text-align: center;
+}
+
+.contacts{
+  margin: 2em 0;
+}
+
+.email{
+  color: var(--yellow-secondary);
 }
 
 .icon svg, .icon img{
