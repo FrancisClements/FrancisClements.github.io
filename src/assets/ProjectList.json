@@ -6,7 +6,7 @@
         "desc": "Help Fizzy rescue her girlfriend from the invaders ... to stop them from reaching world domination!",
         "src": "supersoda/main-menu.png",
         "tags": ["c#", "unity2D", "mobile"],
-        "links": {},
+        "links": [],
         "selected": true
     },
     {
@@ -14,7 +14,7 @@
         "desc": "Hops is a tale about frogs and their adventures in the quest of reclaiming their home from predators and other creatures.",
         "src": "hops/thumbnail.png",
         "tags": ["c#", "unity2D", "pc"],
-        "links": {"itchio": "https://francisclements.itch.io/hops"},
+        "links": [{"itchio": "https://francisclements.itch.io/hops"}],
         "selected": true
     },
     {
@@ -22,7 +22,7 @@
         "desc": "An interactive application built for children from Pangasinan to introduce English language in a fun way.",
         "src": "galaw/menu-logo.png",
         "tags": ["c#", "unity2D", "mobile"],
-        "links": {},
+        "links": [],
         "selected": true
     },
     {
@@ -30,7 +30,7 @@
         "desc": "Find the key and escape before the time rans out.",
         "src": "escroom/main-menu.png",
         "tags": ["unreal", "pc"],
-        "links": {},
+        "links": [],
         "selected": false
     },
     {
@@ -38,7 +38,7 @@
         "desc": "The pumpkins ain't gonna collect themselves.",
         "src": "pumpkin/thumbnail.png",
         "tags": ["unreal", "pc"],
-        "links": {},
+        "links": [],
         "selected": false
     }
     ]

@@ -1,7 +1,12 @@
+<script setup>
+import { ItchIo } from "@vicons/fa"
+</script>
+
 <script>
 import colorTagsJSON from "@/assets/ColorTags.json"
+
 export default {
-    props: ['title', 'desc', 'img_src', 'tags'],
+    props: ['title', 'desc', 'img_src', 'tags', 'links'],
     data() {
         return {
             colorTags: colorTagsJSON
@@ -20,6 +25,11 @@ export default {
                 tag = this.colorTags["default"]
 
             return tag
+        },
+        keyExists(link, linkName) {
+            var key = Object.keys(link)[0]
+
+            return linkName === key;
         }
     }
 }
@@ -31,7 +41,16 @@ export default {
         <img :src="img_src" :alt="title">
     </div>
     <figcaption>
-        <h1 class="header game-title">{{title}}</h1>
+        <div class="heading">
+            <h1 class="header game-title">{{title}}</h1>
+            <ul class="icon-container">
+                <li v-for="link in links" class="icon">
+                    <a :href="Object.values(link)[0]">
+                    <ItchIo v-if="keyExists(link, 'itchio')"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <p>{{desc}}</p>
         <ul class="tag-container last-item">
             <li v-for="tag in tags" 
@@ -59,10 +78,20 @@ export default {
     flex: 1 1 200px;
 }
 
+.heading{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--blue-accent2);
+}
+
 .game-title{
     font-size: 1.5em;
-    border-bottom: 1px solid var(--blue-accent2);
-    padding-bottom: 1rem;
+}
+
+.icon-container{
+    align-items: center;
 }
 
 
@@ -71,7 +100,7 @@ export default {
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
-    margin:1em 0;
+    margin-bottom:1em;
 }
 
 .tag{
@@ -90,6 +119,11 @@ figcaption{
 
 .last-item{
     margin-top: auto;
+}
+
+svg{
+    height: 1.5rem;
+    display: block;
 }
 
 

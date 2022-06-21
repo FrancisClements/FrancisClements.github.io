@@ -103,6 +103,25 @@ img{
     margin: 2rem 0;
 }
 
+.icon-container{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: .5em 0;
+}
+
+.icon{
+    background-color: transparent;
+    border-radius: 2em;
+    padding: 8px;
+    transition: .25s;
+}
+
+.center{
+    text-align: center;
+  }
+  
+
 /* Hover part */
 @media (hover: hover) {
     a:hover {
@@ -112,6 +131,10 @@ img{
     .primary-button:hover{
         color: var(--bg);
         background-color: #4b59b6;
+    }
+
+    .icon:hover{
+        background-color: rgba(191, 236, 255, .6);
     }
 }
 

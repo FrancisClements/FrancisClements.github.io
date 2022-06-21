@@ -1,5 +1,5 @@
 <script setup>
-import { Python, Unity } from '@vicons/fa';
+import { Java, Python, Unity, GitAlt } from '@vicons/fa';
 </script>
 
 <template>
@@ -21,10 +21,10 @@ import { Python, Unity } from '@vicons/fa';
       <li>Appreciating animation</li>
     </ul>
     <section class="skillset-wrapper">
-      <h1 class="center">Technical Skillset</h1>
+      <h1 class="center">Proficient Skillset and Tools</h1>
       <div class="skillset-grid">
         <div class="icon-wrapper">
-          <div class="icon">
+          <div class="icon-skill">
             <Python/>
           </div>
           <div class="overlay">
@@ -32,7 +32,7 @@ import { Python, Unity } from '@vicons/fa';
           </div>
         </div>
         <div class="icon-wrapper">
-          <div class="icon">
+          <div class="icon-skill">
             <img src="/svg/cs-logo.svg" alt="C# Logo">
           </div>
           <div class="overlay">
@@ -40,7 +40,23 @@ import { Python, Unity } from '@vicons/fa';
           </div>
         </div>
         <div class="icon-wrapper">
-          <div class="icon">
+          <div class="icon-skill">
+            <GitAlt/>
+          </div>
+          <div class="overlay">
+            <p class="name">Git</p>
+          </div>
+        </div>
+        <div class="icon-wrapper">
+          <div class="icon-skill">
+            <img src="/svg/vscode-logo.svg" alt="VS Code Logo">
+          </div>
+          <div class="overlay">
+            <p class="name">Visual Studio Code</p>
+          </div>
+        </div>
+        <div class="icon-wrapper">
+          <div class="icon-skill">
             <Unity/>
           </div>
           <div class="overlay">
@@ -48,11 +64,27 @@ import { Python, Unity } from '@vicons/fa';
           </div>
         </div>
         <div class="icon-wrapper">
-          <div class="icon">
+          <div class="icon-skill">
             <img src="/svg/unreal-logo.svg" alt="Unreal Engine Logo">
           </div>
           <div class="overlay">
             <p class="name">Unreal Engine</p>
+          </div>
+        </div>
+        <div class="icon-wrapper">
+          <div class="icon-skill">
+            <img src="/svg/blender-logo.svg" alt="Blender Logo">
+          </div>
+          <div class="overlay">
+            <p class="name">Blender</p>
+          </div>
+        </div>
+        <div class="icon-wrapper">
+          <div class="icon-skill">
+            <img src="/svg/autodesk-maya-logo.svg" alt="Maya Logo">
+          </div>
+          <div class="overlay">
+            <p class="name">Autodesk Maya</p>
           </div>
         </div>
       </div>
@@ -125,7 +157,7 @@ import { Python, Unity } from '@vicons/fa';
 
 .name {
   color: var(--bg);
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -133,23 +165,20 @@ import { Python, Unity } from '@vicons/fa';
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  margin: 0
+  margin: 0;
+  font-weight: normal;
 }
 
 .icon-wrapper:hover .overlay {
   opacity: 1;
 }
 
-.icon{
+.icon-skill{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 
-}
-
-.center{
-  text-align: center;
 }
 
 .contacts{
@@ -160,7 +189,7 @@ import { Python, Unity } from '@vicons/fa';
   color: var(--yellow-secondary);
 }
 
-.icon svg, .icon img{
+.icon-skill svg, .icon-skill img{
   height: 4rem;
 }
 

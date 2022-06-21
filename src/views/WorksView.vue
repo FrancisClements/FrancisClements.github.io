@@ -10,12 +10,21 @@ export default {
             img_dir: ProjectsJSON.img_dir,
             works: ProjectsJSON.works
         }
+    },
+    mounted () {
+    window.scrollTo(0, 0)
     }
 }
 </script>
 
 <template>
 <div class="works">
+    <div class="demo-reel">
+        <h1 class="header">Demo Reel</h1>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1u5EggBv8JbKGjStqDr5zOkKsnLUuu-Rn/preview" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
     <h1 class="header">Works</h1>
     <div class="flex-list">
         <WorkCardVue
@@ -23,6 +32,7 @@ export default {
             :title="w.title"
             :desc="w.desc"
             :img_src="img_dir + w.src"
+            :links="w.links"
             :tags="w.tags"
         />
     </div>
@@ -34,14 +44,48 @@ export default {
     padding: var(--section-y-padding) var(--section-padding);
 }
 
+.demo-reel{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--reel-margin) 0;
+}
+
+/*i-frame css code*/
+
+.video-container {
+    position: relative;
+    height: var(--reel-height);
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--blue-accent2);
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 851px), (orientation: landscape){
-    :root{
-        --grid-items: 2;
+    .demo-reel{
+        --reel-margin: 3em;
+    }
+    .video-container{
+        --reel-height: 715px;
     }
 }
 @media (orientation: portrait) and (min-width: 551px) and (max-width: 850px){
-    :root{
-        --grid-items: 1;
+    .demo-reel{
+        --reel-margin: 1em;
+    }
+    .video-container{
+        --reel-height: 360px;
     }
 }
 </style>
