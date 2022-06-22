@@ -95,6 +95,10 @@ img{
     border-radius: 10px;
 }
 
+.contact-button{
+    padding: .5rem 1.5rem;
+}
+
 .flex-list{
     display: flex;
     flex-direction: column;

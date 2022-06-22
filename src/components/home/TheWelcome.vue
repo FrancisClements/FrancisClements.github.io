@@ -31,10 +31,10 @@ export default {
         I can build games and applications, specializing on PC and Mobile platforms.
       </h2>
       <div class="contacts">
-        <RouterLink to="/works" class="primary-button">
+        <RouterLink to="/works" class="primary-button contact-button">
           View Works
         </RouterLink>
-        <RouterLink to="/about">
+        <RouterLink to="/about" class="contact-button">
           Get in touch
         </RouterLink>
       </div>
@@ -145,7 +145,6 @@ export default {
   }
 
   .contacts a{
-    padding: .5rem 1.5rem;
     display: inline-flex;
   }
 

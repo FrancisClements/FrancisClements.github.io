@@ -1,5 +1,6 @@
 <script setup>
 import { Java, Python, Unity, GitAlt } from '@vicons/fa';
+import SkillIconVue from '../components/SkillIcon.vue';
 </script>
 
 <template>
@@ -23,75 +24,36 @@ import { Java, Python, Unity, GitAlt } from '@vicons/fa';
     <section class="skillset-wrapper">
       <h1 class="center">Proficient Skillset and Tools</h1>
       <div class="skillset-grid">
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <Python/>
-          </div>
-          <div class="overlay">
-            <p class="name">Python</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <img src="/svg/cs-logo.svg" alt="C# Logo">
-          </div>
-          <div class="overlay">
-            <p class="name">C#</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <GitAlt/>
-          </div>
-          <div class="overlay">
-            <p class="name">Git</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <img src="/svg/vscode-logo.svg" alt="VS Code Logo">
-          </div>
-          <div class="overlay">
-            <p class="name">Visual Studio Code</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <Unity/>
-          </div>
-          <div class="overlay">
-            <p class="name">Unity Engine</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <img src="/svg/unreal-logo.svg" alt="Unreal Engine Logo">
-          </div>
-          <div class="overlay">
-            <p class="name">Unreal Engine</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <img src="/svg/blender-logo.svg" alt="Blender Logo">
-          </div>
-          <div class="overlay">
-            <p class="name">Blender</p>
-          </div>
-        </div>
-        <div class="icon-wrapper">
-          <div class="icon-skill">
-            <img src="/svg/autodesk-maya-logo.svg" alt="Maya Logo">
-          </div>
-          <div class="overlay">
-            <p class="name">Autodesk Maya</p>
-          </div>
-        </div>
+        <SkillIconVue name="Python">
+          <Python/>
+        </SkillIconVue>
+        <SkillIconVue name="C#">
+          <img src="/svg/cs-logo.svg" alt="C# Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Git">
+          <GitAlt/>
+        </SkillIconVue>
+        <SkillIconVue name="Visual Studio Code">
+          <img src="/svg/vscode-logo.svg" alt="VS Code Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Unity Engine">
+          <Unity/>
+        </SkillIconVue>
+        <SkillIconVue name="Unreal Engine">
+          <img src="/svg/unreal-logo.svg" alt="Unreal Engine Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Blender">
+          <img src="/svg/blender-logo.svg" alt="Blender Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Autodesk Maya">
+          <img src="/svg/autodesk-maya-logo.svg" alt="Maya Logo">
+        </SkillIconVue>
       </div>
     </section>
     <section class="contacts center">
       <p>Interested to work with me?&nbsp;Feel free to contact me below!</p>
       <h1 class="email">ftclemente@student.hau.edu.ph</h1>
+      <a href="https://drive.google.com/file/d/1ibcXw6LN5bwY3vhtEi3rFZGrL1PER1vN/view?usp=sharing" class="primary-button"  target="_blank" rel="noopener noreferrer">View Resume</a>
 
     </section>
     
@@ -132,61 +94,16 @@ import { Java, Python, Unity, GitAlt } from '@vicons/fa';
   width: 100%;
 }
 
-.icon-wrapper{
-  border-radius: 10px;
-  border: 1px solid var(--yellow-accent);
-  height: 3em;
-  width: 3em;
-  padding: 2em;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .25s ease;
-  background-color: rgba(129, 90, 28, .85);
-  border-radius: inherit;
-}
-
-.name {
-  color: var(--bg);
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 0;
-  font-weight: normal;
-}
-
-.icon-wrapper:hover .overlay {
-  opacity: 1;
-}
-
-.icon-skill{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-
-}
-
 .contacts{
   margin: 2em 0;
 }
 
 .email{
   color: var(--yellow-secondary);
+}
+
+.primary-button{
+  padding: .5em;
 }
 
 .icon-skill svg, .icon-skill img{
