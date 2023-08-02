@@ -19,12 +19,6 @@ export default {
 
 <template>
 <div class="works">
-    <div class="demo-reel">
-        <h1 class="header">Demo Reel</h1>
-        <div class="video-container">
-            <iframe src="https://drive.google.com/file/d/1u5EggBv8JbKGjStqDr5zOkKsnLUuu-Rn/preview" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
     <h1 class="header">Works</h1>
     <div class="flex-list">
         <WorkCardVue
@@ -35,6 +29,15 @@ export default {
             :links="w.links"
             :tags="w.tags"
         />
+    </div>
+    <div class="demo-reel">
+        <h1 class="header">Showcase Reels</h1>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1u5EggBv8JbKGjStqDr5zOkKsnLUuu-Rn/preview" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1a4FWKqNRDbXXLp80ApRi9hBk-VQ-gmh1/preview" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 </template>
@@ -49,7 +52,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--reel-margin) 0;
+    padding-top: var(--reel-margin);
 }
 
 /*i-frame css code*/
@@ -60,6 +63,7 @@ export default {
     width: 100%;
     overflow: hidden;
     border: 1px solid var(--blue-accent2);
+    margin-bottom: 15px;
 }
 
 .video-container iframe,
@@ -80,7 +84,7 @@ export default {
         --reel-height: 715px;
     }
 }
-@media (orientation: portrait) and (min-width: 551px) and (max-width: 850px){
+@media (orientation: portrait) and (max-width: 850px){
     .demo-reel{
         --reel-margin: 1em;
     }

@@ -25,7 +25,7 @@ import {GithubSquare, ItchIo, Linkedin} from '@vicons/fa'
         </li>
     </ul>
     <div class="footer-txt">
-        <p>2022 © Francis Ivan Clemente</p>
+        <p>2023 © Francis Ivan Clemente</p>
         <p>All Rights Reserved</p>
     </div>
 </footer>

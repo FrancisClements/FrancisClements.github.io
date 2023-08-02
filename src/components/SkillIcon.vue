@@ -23,7 +23,22 @@ export default {
   width: 3em;
   padding: 2em;
   position: relative;
+  grid-column: span 2;
+  display: inline;
 }
+
+@media (min-width: 851px), (orientation: landscape){
+    /* Dealing with 2 orphan items */
+  .icon-wrapper:last-child:nth-child(4n + 2) {
+    grid-column-end: -3;
+  }
+  
+  .icon-wrapper:nth-last-child(2):nth-child(4n + 1) {
+    grid-column-end: 5;
+  }
+}
+
+
 
 .overlay {
   position: absolute;

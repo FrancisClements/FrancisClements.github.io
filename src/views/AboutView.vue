@@ -6,14 +6,14 @@ import SkillIconVue from '../components/SkillIcon.vue';
 <template>
   <section class="about">
     <div class="headline">
-      <img src="/img/profile.jpg" alt="My Image" class="prof-img">
+      <img src="/img/profile.jpg" alt="Profile Image" class="prof-img">
       <div class="headline-text">
         <h1 class="header">Francis Ivan Clemente</h1>
-        <p>... will become a future game and software developer from the Philippines.</p>
+        <p>is a game and software developer from the Philippines.</p>
       </div>
     </div>
     <p>&nbsp;</p>
-    <p>I am currently pursuing B.S Entertainment Multimedia Computing (EMC) at Holy Angel University. I'm expected to graduate sometime at 2023.</p>
+    <p>I have graduated at Holy Angel University as Bachelor of Science on Entertainment Multimedia Computing (EMC).</p>
     <p>When I'm not coding or building games and applications, I utilize my free time to do other activities like:</p>
     <ul>
       <li>Baking</li>
@@ -48,12 +48,18 @@ import SkillIconVue from '../components/SkillIcon.vue';
         <SkillIconVue name="Autodesk Maya">
           <img src="/svg/autodesk-maya-logo.svg" alt="Maya Logo">
         </SkillIconVue>
+        <SkillIconVue name="Adobe Creative Suite">
+          <img src="/svg/adobe-logo.svg" alt="Adobe Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Clip Studio Paint">
+          <img src="/svg/clip-studio-paint-logo.svg" alt="Clip Studio Paint Logo">
+        </SkillIconVue>
       </div>
     </section>
     <section class="contacts center">
       <p>Interested to work with me?&nbsp;Feel free to contact me below!</p>
-      <h1 class="email">ftclemente@student.hau.edu.ph</h1>
-      <a href="https://drive.google.com/file/d/1ibcXw6LN5bwY3vhtEi3rFZGrL1PER1vN/view?usp=sharing" class="primary-button"  target="_blank" rel="noopener noreferrer">View Resume</a>
+      <h1 class="email">francisivan.clemente@gmail.com</h1>
+      <a href="https://drive.google.com/file/d/116hHPZPZadPvgg_xqc-K5UDI15dMeYSy/view" class="primary-button"  target="_blank" rel="noopener noreferrer">View Resume</a>
 
     </section>
     
@@ -125,7 +131,7 @@ li{
 }
 @media (min-width: 851px), (orientation: landscape){
   .skillset-grid{
-    --grid-size: repeat(4, auto);
+    --grid-size: repeat(8, auto);
   }
 }
 @media (max-width: 850px){
@@ -133,7 +139,7 @@ li{
     text-align: center;
   }
   .skillset-grid{
-    --grid-size: repeat(2, auto);
+    --grid-size: repeat(4, auto);
   }
 }
 </style>
