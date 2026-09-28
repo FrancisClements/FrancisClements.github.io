@@ -1,4 +1,11 @@
 {
+    "pr": { "color": "#c98cd8", "name": "Premiere Pro" },
+    "ae": { "color": "#7c78e8", "name": "After Effects" },
+    "ps": { "color": "var(--blue-accent2)", "name": "Photoshop" },
+    "csp": { "color": "#cccccc", "name": "Clip Studio Paint" },
+    "sapphire": { "color": "var(--blue-accent)", "name": "Sapphire" },
+    "ai": { "color": "#f7d38c", "name": "Illustrator" },
+
     "unity2D": { "color": "var(--blue-accent)", "name": "Unity 2D" },
     "unreal": { "color": "#c2c7f3", "name": "Unreal Engine 4" },
     "pc": { "color": "var(--blue-accent2)", "name": "PC" },

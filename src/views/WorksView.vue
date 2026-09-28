@@ -12,17 +12,35 @@ export default {
         }
     },
     mounted () {
-    window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
+    },
+    computed: {
+        gameWorks() {
+            return this.works.filter((w) => w.type === "game");
+        },
+        videoWorks() {
+            return this.works.filter((w) => w.type === "video");
+        }
     }
 }
 </script>
 
 <template>
 <div class="works">
-    <h1 class="header">Works</h1>
+    <h1 class="header">Animation Works</h1>
     <div class="flex-list">
         <WorkCardVue
-            v-for="w in works"
+            v-for="w in videoWorks"
+            :title="w.title"
+            :desc="w.desc"
+            :img_src="img_dir + w.src"
+            :tags="w.tags"
+        />
+    </div>
+    <h1 class="header">Game Works</h1>
+    <div class="flex-list">
+        <WorkCardVue
+            v-for="w in gameWorks"
             :title="w.title"
             :desc="w.desc"
             :img_src="img_dir + w.src"
@@ -36,7 +54,7 @@ export default {
             <iframe src="https://drive.google.com/file/d/1u5EggBv8JbKGjStqDr5zOkKsnLUuu-Rn/preview" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-container">
-            <iframe src="https://drive.google.com/file/d/1a4FWKqNRDbXXLp80ApRi9hBk-VQ-gmh1/preview" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1mhweWbuq54FLJgaNoBhZ0ePx2X0AK2MV/preview" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>

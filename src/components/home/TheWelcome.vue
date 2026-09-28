@@ -1,3 +1,8 @@
+<script setup>
+import { initializeKinesis } from '@amineyarman/kinesis'
+initializeKinesis()
+</script>
+
 <script>
 export default {
   data() {
@@ -11,7 +16,7 @@ export default {
 </script>
 
 <template>
-<kinesis-container>
+<div data-kinesistransformer>
   <section class="hero-intro">
     <div class="introduction">
       <h3 class="sub-text">Hi, I'm</h3>
@@ -26,9 +31,10 @@ export default {
         </ul>
       </h1>
       <h2 class="sub-text">
-        I am a 
-        <span>Game</span> and <span>Software Developer</span> based in the Philippines.
-        I can build games and applications, specializing on PC and Mobile platforms.
+        I specialize in
+        <span>Graphic Effects</span> and <span>Video Editing</span>.
+        I can make videos for production and social media. 
+        With my programming experience, I can also build <span>motion graphic templates</span> that involve expressions.
       </h2>
       <div class="contacts">
         <RouterLink to="/works" class="primary-button contact-button">
@@ -42,15 +48,19 @@ export default {
     <!-- /INTRODUCTION -->
     <div class="splash">
       <div class="splash-outer-container">
-      <kinesis-element :strength="-25" class="splash-container">
-        <kinesis-element :strength="-30">
-          <div class="splash-logo"></div>
-        </kinesis-element>
-      </kinesis-element>
+        <div data-kinesistransformer-element
+          data-ks-transform="translate"
+          data-ks-strength="25" class="splash-container">
+          <div data-kinesistransformer-element
+            data-ks-transform="translate"
+            data-ks-strength="30">
+            <div class="splash-logo"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-</kinesis-container>
+</div>
 </template>
 
 <style scoped>

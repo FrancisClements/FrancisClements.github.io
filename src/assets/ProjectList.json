@@ -2,12 +2,49 @@
     "img_dir": "/projects/",
     "works":[
     {
+        "title": "BodyCamBust",
+        "desc": "350k+ subscribers. 10M views (long-form), 16M views (short-form). Made channel branding, custom templates and software.",
+        "src": "bodycambust/thumbnail.jpg",
+        "tags": ["pr", "ae", "ps", "ai", "sapphire", "py", "c#"],
+        "links": [],
+        "selected": true,
+        "type": "video"
+    },
+    {
+        "title": "Cop Bust",
+        "desc": "220k+ views (long-form), 4M views (short-form). Made channel branding, animations and custom templates.",
+        "src": "copbust/thumbnail.png",
+        "tags": ["pr", "ae", "ps", "ai", "sapphire"],
+        "links": [],
+        "selected": true,
+        "type": "video"
+    },
+    {
+        "title": "Humor in Madness",
+        "desc": "A short animated film about a museum worker and a relic of some sort.",
+        "src": "humor/thumbnail.png",
+        "tags": ["csp"],
+        "links": [],
+        "selected": false,
+        "type": "video"
+    },
+    {
+        "title": "Maize",
+        "desc": "Help Mother Duckie catch her little duckies from wandering around the Maize field. But to your surprise, they are more cunning and persistent than what you think.",
+        "src": "maize/thumbnail.png",
+        "tags": ["c#", "unity2D", "pc"],
+        "links": [{"itchio": "https://francisclements.itch.io/maize"}],
+        "selected": false,
+        "type": "game"
+    },
+    {
         "title": "Super Soda Bomber",
-        "desc": "Help Fizzy rescue her girlfriend from the invaders ... to stop them from reaching world domination!",
+        "desc": "Help Fizzy rescue her girlfriend from the invaders... to stop them from reaching world domination!",
         "src": "supersoda/main-menu.png",
         "tags": ["c#", "unity2D", "mobile"],
         "links": [],
-        "selected": true
+        "selected": false,
+        "type": "game"
     },
     {
         "title": "Hops",
@@ -15,7 +52,8 @@
         "src": "hops/thumbnail.png",
         "tags": ["c#", "unity2D", "pc"],
         "links": [{"itchio": "https://francisclements.itch.io/hops"}],
-        "selected": true
+        "selected": false,
+        "type": "game"
     },
     {
         "title": "Galaw",
@@ -23,7 +61,8 @@
         "src": "galaw/menu-logo.png",
         "tags": ["c#", "unity2D", "mobile"],
         "links": [],
-        "selected": true
+        "selected": true,
+        "type": "game"
     },
     {
         "title": "Esc_Room",
@@ -31,7 +70,8 @@
         "src": "escroom/main-menu.png",
         "tags": ["unreal", "pc"],
         "links": [],
-        "selected": false
+        "selected": false,
+        "type": "game"
     },
     {
         "title": "Pumpkin Collecting Simulator",
@@ -39,7 +79,8 @@
         "src": "pumpkin/thumbnail.png",
         "tags": ["unreal", "pc"],
         "links": [],
-        "selected": false
+        "selected": false,
+        "type": "game"
     }
     ]
 }

@@ -9,21 +9,45 @@ import SkillIconVue from '../components/SkillIcon.vue';
       <img src="/img/profile.jpg" alt="Profile Image" class="prof-img">
       <div class="headline-text">
         <h1 class="header">Francis Ivan Clemente</h1>
-        <p>is a game and software developer from the Philippines.</p>
+        <p>is a GFX and video editor from the Philippines.</p>
       </div>
     </div>
     <p>&nbsp;</p>
-    <p>I have graduated at Holy Angel University as Bachelor of Science on Entertainment Multimedia Computing (EMC).</p>
-    <p>When I'm not coding or building games and applications, I utilize my free time to do other activities like:</p>
+    <p>I have graduated with Bachelor of Science on Entertainment Multimedia Computing (EMC) with specialization in Digital Animation.</p>
+    <p>When I'm not coding or editing videos, I utilize my free time to do other activities like:</p>
     <ul>
       <li>Baking</li>
       <li>Cooking</li>
       <li>Playing video games</li>
-      <li>Appreciating animation</li>
+      <li>Game Development</li>
     </ul>
     <section class="skillset-wrapper">
       <h1 class="center">Proficient Skillset and Tools</h1>
       <div class="skillset-grid">
+        <SkillIconVue name="Premiere Pro">
+          <img src="/svg/premiere-logo.svg" alt="Premiere Pro Logo">
+        </SkillIconVue>
+        <SkillIconVue name="After Effects">
+          <img src="/svg/after-effects-logo.svg" alt="After Effects Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Photoshop">
+          <img src="/svg/photoshop-logo.svg" alt="Photoshop Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Illustrator">
+          <img src="/svg/illustrator-logo.svg" alt="Illustrator Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Clip Studio Paint">
+          <img src="/svg/clip-studio-paint-logo.svg" alt="Clip Studio Paint Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Boris Sapphire">
+          <img src="/svg/sapphire-logo.svg" alt="Sapphire Logo">
+        </SkillIconVue>
+        <SkillIconVue name="Unity Engine">
+          <Unity/>
+        </SkillIconVue>
+        <SkillIconVue name="Blender">
+          <img src="/svg/blender-logo.svg" alt="Blender Logo">
+        </SkillIconVue>   
         <SkillIconVue name="Python">
           <Python/>
         </SkillIconVue>
@@ -35,31 +59,14 @@ import SkillIconVue from '../components/SkillIcon.vue';
         </SkillIconVue>
         <SkillIconVue name="Visual Studio Code">
           <img src="/svg/vscode-logo.svg" alt="VS Code Logo">
-        </SkillIconVue>
-        <SkillIconVue name="Unity Engine">
-          <Unity/>
-        </SkillIconVue>
-        <SkillIconVue name="Unreal Engine">
-          <img src="/svg/unreal-logo.svg" alt="Unreal Engine Logo">
-        </SkillIconVue>
-        <SkillIconVue name="Blender">
-          <img src="/svg/blender-logo.svg" alt="Blender Logo">
-        </SkillIconVue>
-        <SkillIconVue name="Autodesk Maya">
-          <img src="/svg/autodesk-maya-logo.svg" alt="Maya Logo">
-        </SkillIconVue>
-        <SkillIconVue name="Adobe Creative Suite">
-          <img src="/svg/adobe-logo.svg" alt="Adobe Logo">
-        </SkillIconVue>
-        <SkillIconVue name="Clip Studio Paint">
-          <img src="/svg/clip-studio-paint-logo.svg" alt="Clip Studio Paint Logo">
-        </SkillIconVue>
+        </SkillIconVue>       
+             
       </div>
     </section>
     <section class="contacts center">
       <p>Interested to work with me?&nbsp;Feel free to contact me below!</p>
       <h1 class="email">francisivan.clemente@gmail.com</h1>
-      <a href="https://drive.google.com/file/d/116hHPZPZadPvgg_xqc-K5UDI15dMeYSy/view" class="primary-button"  target="_blank" rel="noopener noreferrer">View Resume</a>
+      <a href="https://drive.google.com/file/d/1Goq_w0ptHensQEvRHLeh_HLvKStpGQqf/view" class="primary-button"  target="_blank" rel="noopener noreferrer">View Resume</a>
 
     </section>
     
@@ -74,6 +81,7 @@ import SkillIconVue from '../components/SkillIcon.vue';
 .headline{
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 25px;
   align-items: center;
   flex-wrap: wrap;

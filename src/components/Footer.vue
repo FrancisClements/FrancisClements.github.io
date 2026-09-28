@@ -14,18 +14,13 @@ import {GithubSquare, ItchIo, Linkedin} from '@vicons/fa'
             </a>
         </li>
         <li class="icon">
-            <a href="https://francisclements.itch.io/">
-            <ItchIo/>
-            </a>
-        </li>
-        <li class="icon">
             <a href="https://www.linkedin.com/in/francis-ivan-clemente">
             <Linkedin/>
             </a>
         </li>
     </ul>
     <div class="footer-txt">
-        <p>2023 © Francis Ivan Clemente</p>
+        <p>2026 © Francis Ivan Clemente</p>
         <p>All Rights Reserved</p>
     </div>
 </footer>
